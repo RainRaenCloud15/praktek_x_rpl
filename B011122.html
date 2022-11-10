@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+</head>
+<body>
+	<button onclick="klik()">tambah</button>
+	<p id="teks">0</p>
+	<button onclick="klik2()">kurang</button>
+	<button onclick="klik3()">reset</button>
+	<p id="teks2"></p>
+	<script type="text/javascript">
+		let teksbaru = 0
+		function klik() {
+			teksbaru += 10
+			document.getElementById('teks').innerHTML = teksbaru 
+			document.getElementById('teks2').innerHTML = "Tambah"
+		} 
+		function klik2() {
+			teksbaru -= 10
+			document.getElementById('teks').innerHTML = teksbaru 
+			document.getElementById('teks2').innerHTML = "Kurang"
+		}
+		function klik3() {
+			teksbaru =0
+			document.getElementById('teks').innerHTML = teksbaru 
+			document.getElementById('teks2').innerHTML = "Reset" 
+		}
+	</script>
+</body>
+</html>
